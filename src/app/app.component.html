@@ -1,0 +1,46 @@
+<div class="container">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- <a class="navbar-brand" href="">Todo List</a> -->
+       <a class="navbar-brand"  [routerLink]="['']">Todo List</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a [routerLink]="['todos']">To~Dos</a></li>
+          <li><a [routerLink]="['events']">Events</a></li>
+          <li><a [routerLink]="['user']">User: XXXXX</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="app-user navbar-text"></li>
+          <li><a class="btn btn-link">Logout</a></li>
+          <li><a class="btn btn-link">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<app-notifications></app-notifications>
+<div class="container">
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        Test Notifications:
+        <button type="button" label="Success" class="btn btn-success" (click)="testX('success')"></button>
+        <button type="button" label="Warn" class="btn btn-warning" (click)="testX('warn')"></button>
+        <button type="button" label="Info" class="btn btn-info" (click)="testX('info')"></button>
+        <button type="button" label="Error" class="btn btn-danger" (click)="testX('error')"></button>
+        <button type="button" label="Wait" class="btn btn-secondary" (click)="testX('wait')"></button>
+      </div>
+    </div>
+  </div> -->
+  <router-outlet></router-outlet>
+</div>
+
+
